@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /services
+Allow: /blog
+# Sitemap
+Sitemap: https://urbanclothing05.netlify.app/sitemap.xml

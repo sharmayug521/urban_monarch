@@ -1,0 +1,6 @@
+{
+  "name": "Urban Monarch",
+  "description": "Premium men's fashion designed for confidence, comfort, and sophistication. Explore elevated men's wear, footwear, and accessories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
