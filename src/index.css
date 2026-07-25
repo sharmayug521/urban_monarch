@@ -14,3 +14,229 @@
   --color-neutral-950: #050505;
   --color-brand: #c5a059;
 }
+/* =========================================================
+   URBAN MONARCH - MOBILE RESPONSIVENESS
+   ========================================================= */
+
+/* 1. Global Reset & Overflow Prevention */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden; /* Prevents awkward horizontal scrollbars */
+}
+
+/* 2. Responsive Images & Banners */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. Mobile Layout Overrides (For screens smaller than 768px) */
+@media screen and (max-width: 767px) {
+  
+  /* Container Padding for Edge Margins */
+  .container, 
+  header, 
+  footer, 
+  section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Stack Flexible Sections Vertically */
+  .hero, 
+  .banner, 
+  .flex-container, 
+  .row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  /* Product & Lookbook Grids: 2 Columns on Mobile */
+  .product-grid, 
+  .grid, 
+  .collection-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* 2 items per row */
+    gap: 12px !important;
+  }
+
+  /* Hero & Section Typography Adjustments */
+  h1 {
+    font-size: clamp(2rem, 7vw, 2.8rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 5vw, 2rem) !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Mobile-Friendly Full Width Buttons */
+  button, 
+  .btn, 
+  .cta-button {
+    width: 100% !important;
+    min-height: 48px; /* Finger-tap standard size */
+    font-size: 1rem !important;
+    padding: 12px 20px !important;
+  }
+/* =========================================================
+   URBAN MONARCH - MOBILE RESPONSIVENESS
+   ========================================================= */
+
+/* 1. Global Reset & Overflow Prevention */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden; /* Prevents awkward horizontal scrollbars */
+}
+
+/* 2. Responsive Images & Banners */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. Mobile Layout Overrides (For screens smaller than 768px) */
+@media screen and (max-width: 767px) {
+  
+  /* Container Padding for Edge Margins */
+  .container, 
+  header, 
+  footer, 
+  section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Stack Flexible Sections Vertically */
+  .hero, 
+  .banner, 
+  .flex-container, 
+  .row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  /* Product & Lookbook Grids: 2 Columns on Mobile */
+  .product-grid, 
+  .grid, 
+  .collection-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* 2 items per row */
+    gap: 12px !important;
+  }
+
+  /* Hero & Section Typography Adjustments */
+  h1 {
+    font-size: clamp(2rem, 7vw, 2.8rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 5vw, 2rem) !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Mobile-Friendly Full Width Buttons */
+  button, 
+  .btn, 
+  .cta-button {
+    width: 100% !important;
+    min-height: 48px; /* Finger-tap standard size */
+    font-size: 1rem !important;
+    padding: 12px 20px !important;
+  }
+/* =========================================================
+   URBAN MONARCH - MOBILE RESPONSIVENESS
+   ========================================================= */
+
+/* 1. Global Reset & Overflow Prevention */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden; /* Prevents awkward horizontal scrollbars */
+}
+
+/* 2. Responsive Images & Banners */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. Mobile Layout Overrides (For screens smaller than 768px) */
+@media screen and (max-width: 767px) {
+  
+  /* Container Padding for Edge Margins */
+  .container, 
+  header, 
+  footer, 
+  section {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Stack Flexible Sections Vertically */
+  .hero, 
+  .banner, 
+  .flex-container, 
+  .row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  /* Product & Lookbook Grids: 2 Columns on Mobile */
+  .product-grid, 
+  .grid, 
+  .collection-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* 2 items per row */
+    gap: 12px !important;
+  }
+
+  /* Hero & Section Typography Adjustments */
+  h1 {
+    font-size: clamp(2rem, 7vw, 2.8rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 5vw, 2rem) !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Mobile-Friendly Full Width Buttons */
+  button, 
+  .btn, 
+  .cta-button {
+    width: 100% !important;
+    min-height: 48px; /* Finger-tap standard size */
+    font-size: 1rem !important;
+    padding: 12px 20px !important;
+  }
+}
