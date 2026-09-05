@@ -30,7 +30,6 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative min-h-[90vh] flex items-center justify-center bg-radial from-neutral-850 to-neutral-950 overflow-hidden pt-20">
         {/* Background decorative styling */}
-        <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 z-0 pointer-events-none">
   <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-amber-500/5 rounded-full opacity-50" />
   <div className="absolute bottom-1/3 right-1/4 w-72 h-72 bg-amber-400/5 rounded-full opacity-40" />
