@@ -12,7 +12,7 @@ export const PRODUCTS: Product[] = [
     color: 'White',
     material: '100% Cotton',
     sizes: ['S', 'M', 'L', 'XL'],
-    imageUrl: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=80&w=600',
+    imageUrl: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&q=65&w=500',
     description: 'A classic button-down shirt made with premium high-grade cotton, featuring a refined basket-weave structure. Perfect for transition from boardroom business hours to evening lounges.',
     rating: 4.8,
     isBestSeller: true,
