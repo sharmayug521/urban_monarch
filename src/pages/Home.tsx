@@ -31,11 +31,11 @@ export default function Home() {
       <div className="relative min-h-[90vh] flex items-center justify-center bg-radial from-neutral-850 to-neutral-950 overflow-hidden pt-20">
         {/* Background decorative styling */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] bg-amber-400/5 rounded-full blur-3xl" />
+          <div className="absolute inset-0 z-0 pointer-events-none">
+  <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-amber-500/5 rounded-full opacity-50" />
+  <div className="absolute bottom-1/3 right-1/4 w-72 h-72 bg-amber-400/5 rounded-full opacity-40" />
         </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+ <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
           <div className="space-y-6 max-w-5xl mx-auto">
           </div>
             <span className="font-mono text-xs tracking-[0.4em] uppercase text-amber-500 font-bold block">
