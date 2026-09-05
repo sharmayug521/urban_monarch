@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Truck, RotateCcw, Award, Sparkles, ShoppingBag, ArrowRight, Heart, Star } from 'lucide-react';
-import { motion } from 'motion/react';
 import SEO from '../components/SEO';
 import { PRODUCTS, TESTIMONIALS } from '../data';
 import { useCart } from '../context/CartContext';
@@ -37,12 +36,8 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-6 max-w-5xl mx-auto"
-          >
+          <div className="space-y-6 max-w-5xl mx-auto">
+          </div>
             <span className="font-mono text-xs tracking-[0.4em] uppercase text-amber-500 font-bold block">
               Premium Men's Fashion
             </span>
