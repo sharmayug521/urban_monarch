@@ -18,9 +18,9 @@
   --color-brand: #c5a059;
 }
 
-/* ================================
-   GLOBAL PERFORMANCE OPTIMIZATION
-   ================================ */
+/* =========================
+   GLOBAL PERFORMANCE
+   ========================= */
 
 html {
   -webkit-tap-highlight-color: transparent;
@@ -33,17 +33,36 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  touch-action: manipulation;
-  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   background: #0a0a0a;
+
+  font-feature-settings:
+    "cv02",
+    "cv03",
+    "cv04",
+    "cv11";
 }
 
-/* Prevent horizontal overflow */
 * {
   box-sizing: border-box;
 }
 
-/* Faster interaction on touch devices */
+/* Prevent oversized media from causing horizontal overflow */
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* Images */
+
+img {
+  display: block;
+  height: auto;
+}
+
+/* Touch optimization */
+
 button,
 a,
 input,
@@ -52,68 +71,18 @@ textarea {
   touch-action: manipulation;
 }
 
-/* ================================
-   IMAGE OPTIMIZATION
-   ================================ */
+/* =========================
+   CONTENT VISIBILITY
+   ========================= */
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.performance-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 600px;
 }
 
-/* ================================
-   MOBILE PERFORMANCE
-   ================================ */
-
-@media (max-width: 768px) {
-
-  /* Reduce expensive visual effects */
-  .backdrop-blur-md,
-  .backdrop-blur-sm,
-  .backdrop-blur-lg,
-  .backdrop-blur-xl {
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-  }
-
-  /* Reduce expensive blur effects on mobile */
-  .blur-3xl,
-  .blur-2xl {
-    filter: none !important;
-  }
-
-  /* Disable unnecessary animations on mobile */
-  .animate-pulse {
-    animation: none !important;
-  }
-
-  /* Reduce transitions on mobile */
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0.15s !important;
-  }
-}
-
-/* ================================
-   REDUCED MOTION
-   ================================ */
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* ================================
-   HORIZONTAL SCROLL CONTAINERS
-   ================================ */
+/* =========================
+   HORIZONTAL SCROLL
+   ========================= */
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -124,12 +93,68 @@ img {
   scrollbar-width: none;
 }
 
-/* ================================
-   CONTENT RENDERING
-   ================================ */
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
 
-/* Apply this class only to large sections below the fold */
-.performance-section {
-  content-visibility: auto;
-  contain-intrinsic-size: 600px;
+@media (max-width: 768px) {
+
+  /*
+   * Backdrop blur is expensive on mobile GPUs.
+   * Keep the visual appearance but remove
+   * the expensive blur operation.
+   */
+
+  .backdrop-blur-xs,
+  .backdrop-blur-sm,
+  .backdrop-blur-md,
+  .backdrop-blur-lg,
+  .backdrop-blur-xl,
+  .backdrop-blur-2xl,
+  .backdrop-blur-3xl {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /*
+   * Large blur filters are expensive on phones.
+   */
+
+  .blur-3xl,
+  .blur-2xl {
+    filter: none !important;
+  }
+
+  /*
+   * Disable decorative pulse animations.
+   */
+
+  .animate-pulse {
+    animation: none !important;
+  }
+
+  /*
+   * Slightly reduce transitions on mobile.
+   */
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.15s !important;
+  }
+}
+
+/* =========================
+   ACCESSIBILITY
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
